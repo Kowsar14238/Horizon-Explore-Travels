@@ -10,7 +10,11 @@ body {
     background-color: #fff;
 }
 
-main section {
+.body-sections{
+    /* margin-top: 3%;
+    margin-right: 8%;
+    margin-bottom: 3%;
+    margin-left: 8%; */
     margin: 3% 8%;
 }
 
@@ -91,8 +95,7 @@ main section {
     border-radius: 5px;
     background-color: #fff;
 }
-
-/* Style for the submit button*/
+/* Style for the main button*/
 .main-btn{
     display: flex;
     align-items: center;
@@ -104,64 +107,254 @@ main section {
     border-radius: 8px;
     cursor: pointer;
 }
+/* Find button icon */
 .main-btn span{
     padding: 0px 10px;
 }
-/* Hover effect for the submit button */
+/* Hover effect for the main button */
 .main-btn:hover{
     background-color: #000;
 }
 
 
+            /*** Popular Tour Section ***/
 
-            /***Popular Tour Section***/
+/* Container for popular tours */
 #popular-tours {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 7% !important;
-    /* align-items: center; */
+    font-family: 'Lucida Sans Regular', sans-serif;
 }
+/* Content styling for popular tours */
 .popular-tours-content {
     flex: 1;
     padding-right: 20px;
 }
+/* Title styling for popular tours */
 .popular-tours-content h1 {
     font-size: 40px;
     font-weight: bolder;
     margin-bottom: 20px;
 }
+/* Paragraph styling for popular tours */
 .popular-tours-content p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
     color: #5A5A5D;
 }
+/* List item styling for popular tours */
 .popular-tours-content li {
     list-style-type: disc;
     margin-left: 20px;
     line-height: 1.6;
-    color: #131318;
+    color: #5A5A5D;
     margin-bottom: 2%;
 }
-.main-btn-others{
-    padding: 2.5% 4%;
+/* Styling for a common button class */
+.main-btn-others {
+    padding: 2% 4%;
     font-weight: 600;
 }
+/* Styling for images in popular tours section */
 .popular-tours-img img {
     width: 100%;
     border-radius: 8px;
 }
 
 
-            /***Destination Section***/
-
-.destination-images{
+            /*** Destination Section ***/
+#destination, #why-choose{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Style the destination contents */
+.destination-contents{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3% 0%;
+    font-family: 'Lucida Sans Regular', sans-serif;
+}
+/* Title styling for destination contents */
+.destination-contents h1{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 4%;
+}
+/* Destination contents paragraph */
+.destination-contents p{
+    font-size: 16px;
+    color: #5A5A5D;
+}
+/* Styling for the container of destination images */
+.destination-images {
     display: grid;
     gap: 2%;
 }
-.destination-images-row{
+/* Styling for rows of destination images */
+.destination-images-row {
     display: flex;
     gap: 2%;
+}
+/* Styling for each destination image */
+.destination-image {
+    position: relative;
+    align-items: center;
+}
+/* Styling for text overlay on destination images */
+.destination-image .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 200%;
+}
+
+
+            /***Why Choose Us Section***/
+#why-choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 8%;
+    font-family: 'Segoe UI', sans-serif;
+}
+/* Heading Style */
+.why-choose-heading {
+    text-align: center;
+    margin-bottom: 4%;
+}
+/* Content Grid */
+.why-choose-contents {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+/* Individual Content Style */
+.why-choose-content{
+    flex: 0 1 48%;
+    flex-direction: column;
+    padding: 2%;
+    margin: 1%;
+}
+/* Icon Style */
+.why-choose-content img {
+    height: 64px;
+    width: 64px;
+}
+.why-choose-content h2{
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 3.5% 0%;
+}
+.why-choose-content p{
+    color: #5A5A5D;
+    line-height: 1.6;
+}
+#why-choose-content-1{
+    background-color: rgb(251, 181, 99, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 16px;
+}
+#why-choose-content-2{
+    background-color: rgb(41, 206, 246, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 16px;
+}
+#why-choose-content-3{
+    background-color: rgb(233, 68, 68, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 16px;
+}
+
+
+            /***Newsletter Section***/
+
+#newsletter-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    font-family: 'Segoe UI', sans-serif;
+}
+.newsletter-contents{
+    display: flex;
+    flex-direction: column;
+    max-width: 475px;
+    padding: 2%;
+    border: 1px solid #FF5400;
+    border-radius: 10px;
+    /* height: 100%; */
+}
+.newsletter-contents h2{
+    font-size: 24px;
+    font-weight: bolder;
+    padding-bottom: 5%;
+}
+.newsletter-contents p{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #5A5A5D;
+}
+.newsletter-contents hr{
+    margin: 6% 0%;
+    color: #131318;
+}
+/* Style for the input field */
+.newsletter-contents form input{
+    padding: 10px;
+    font-size: 16px;
+    width: 393px;
+    height: 52px;
+    background-color: #ccc; 
+    border: none;  
+    border-radius: 8px;
+    margin-bottom: 6%;
+}
+#newsletter-contents-btn{
+    padding: 3% 37.5%;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 6%;
+}
+.newsletter-section img{
+    max-width: 675;
+}
+
+
+            /***Footer***/
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 502px;
+    width: 100%;
+    background-color: rgba(61, 61, 67, 0.1);
+}
+.footer-content{
+    width: 872px;
+}
+.footer-content p{
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 16;
+    color: #5A5A5D;
+}
+.footer-icons i{
+    width: 20px;
+    height: 16px;
 }
 
 

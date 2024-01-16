@@ -6,10 +6,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>HorizonExplore Travels</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media-screen-style.css">
 </head>
 
 
@@ -34,7 +35,7 @@
     <main>
 
         <!-- Top Banner section -->
-        <section id="banner-contents">
+        <section id="banner-contents" class="body-sections">
 
             <div class="banner-text">
                 <h1>Explore Your Travel</h1>
@@ -66,16 +67,20 @@
 
 
         <!-- Popular Tour Section -->
-        <section id="popular-tours">
+        <section id="popular-tours" class="body-sections">
             <div class="popular-tours-content">
                 <h1>Our Popular Tours</h1>
-                <p>Explore the world with our most sought-after tour, where every destination becomes a remarkable chapter in your travel story.</p>
+                <p>
+                    Explore the world with our most sought-after tour, where every destination becomes a remarkable chapter in your travel story.
+                </p>
                 <p>
                     <li>Embark on thrilling adventures, from breathtaking hikes to adrenaline-pumping activities, making memories that last a lifetime.</li>
                     <li>Immerse yourself in the richness of diverse cultures, historical landmarks, and vibrant traditions on this enlightening journey.</li>
                     <li>Create cherished moments with your loved ones in our family-friendly tour, offering a perfect blend of fun, relaxation, and bonding.</li>
                 </p>
-                <p>Choose HorizonExplore Travels for an unforgettable journey where every tour is crafted with passion, ensuring you experience the world in all its beauty and diversity. Your adventure awaits!</p>
+                <p>
+                    Choose HorizonExplore Travels for an unforgettable journey where every tour is crafted with passion, <br>ensuring you experience the world in all its beauty and diversity. Your adventure awaits!
+                </p>
 
                 <button class="main-btn main-btn-others" value="button">Read more</button>
             </div>
@@ -85,34 +90,121 @@
         </section>
 
         <!-- Destination Section -->
-        <section class="destination">
-            <h1>Choose Your Destination</h1>
-            <p>
-                Embark on unforgettable journeys with ous. Explore a diverse array of destinations tailored to your preferences. Find your perfect getaway and let the adventure begin!
-            </p>
+        <section id="destination" class="body-sections">
+            <div class="destination-contents">
+                <h1>Choose Your Destination</h1>
+                <p>
+                    Embark on unforgettable journeys with ous. Explore a diverse array of destinations tailored to your preferences. <br>Find your perfect getaway and let the adventure begin!
+                </p>
+            </div>
 
             <div class="destination-images">
                 <div class="destination-images-row">
-                    <img src="./Images/maldives.png" alt="">
-                    <img src="./Images/indonesia.png" alt="">
+                    <div class="destination-image">
+                        <img src="./Images/maldives.png" alt="">
+                        <h2 class="image-text">Maldives</h2>
+                    </div>
+                    <div class="destination-image">
+                        <img src="./Images/indonesia.png" alt="">
+                        <h2 class="image-text">Indonesia</h2>
+                    </div>
                 </div>
                 <div class="destination-images-row">
-                    <img src="./Images/srilanka.png" alt="">
-                    <img src="./Images/north-america.png" alt="">
-                    <img src="./Images/kashmir.png" alt="">
+                    <div class="destination-image">
+                        <img src="./Images/srilanka.png" alt="">
+                        <h2 class="image-text">Sri Lanka</h2>
+                    </div>
+                    <div class="destination-image">
+                        <img src="./Images/north-america.png" alt="">
+                        <h2 class="image-text">North America</h2>
+                    </div>
+                    <div class="destination-image">
+                        <img src="./Images/kashmir.png" alt="">
+                        <h2 class="image-text">Kashmir</h2>
+                    </div>
                 </div>
                 <div class="destination-images-row">
-                    <img src="./Images/bangladesh.png" alt="">
-                    <img src="./Images/bandarban.png" alt="">
+                    <div class="destination-image">
+                        <img src="./Images/bangladesh.png" alt="">
+                        <h2 class="image-text">Bangladesh</h2>
+                    </div>
+                    <div class="destination-image">
+                        <img src="./Images/bandarban.png" alt="">
+                        <h2 class="image-text">Bandarban</h2>
+                    </div>
                 </div>
+            </div>
+
+        </section>
+
+        <!-- Why choose us -->
+        <section id="why-choose" class="body-sections">
+
+            <div class="why-choose-heading">
+                <h1>Why Choose us</h1>
+                <p>
+                    Discover unparalleled travel experiences with our agency, where personalized service meets curated itineraries. Trust us to turn your journey into unforgettable memories, crafted with expertise and passion.
+                </p>
+            </div>
+
+            <div class="why-choose-contents">
+
+                <div class="why-choose-content" id="why-choose-content-1">
+                    <img src="./icons/hotel.jpg" alt="">
+                    <h2>Handpicked Hotels</h2>
+                    <p>Indulge in luxury and comfort with our carefully selected hotels, ensuring a stay that transcends expectations, offering unique experiences tailored to your preferences. Choice is yours.</p>
+                </div>
+                <div class="why-choose-content" id="why-choose-content-2">
+                    <img src="./icons/world class service.jpg" alt="">
+                    <h2>World Class Service</h2>
+                    <p>Experience travel with unmatched service excellence, where our dedicated team goes above and beyond, ensuring seamless journeys and creating cherished memories for every traveler.</p>
+                </div>
+                <div class="why-choose-content" id="why-choose-content-3">
+                    <img src="./icons/best price.jpg" alt="">
+                    <h2>Best Price Guarantee</h2>
+                    <p>Enjoy peace of mind with our Best Price Guarantee, assuring you the most competitive rates for your dream destinations, without compromising on the quality of your travel experience.</p>
+                </div>
+
             </div>
         </section>
 
+        <!-- Newsletter Section -->
+        <section id="newsletter-section" class="body-sections">
+            <div class="newsletter-contents">
+                <h2>Newsletter</h2>
+                <p>Get your daily dose of travel news & tips. <br>Sign up today!</p>
+                <hr>
+                <form action="#">
+                    <input type="text" placeholder="Enter your name"><br>
+                    <input type="email" placeholder="Enter your email">
+                    <button value="button" class="main-btn" id="newsletter-contents-btn">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+            <img src="./Images/newsletter.png" alt="">
+        </section>
+
+
     </main>
 
-
-    <footer>
-
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>
+                Elevate your journey with us, your gateway to extraordinary destinations. Explore our curated travel packages, discover exclusive deals, and embark on unparalleled adventures. Trust us to make every moment of your travel experience memorable.
+            </p>
+            <div class="footer-icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <hr>
+            <div class="website-rights">
+                <p>2017, All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
     
 </body>

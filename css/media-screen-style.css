@@ -1,0 +1,40 @@
+
+/* Responsive Styling */
+@media screen and (max-width: 500px) {
+    .body-sections {
+        margin: 1%;
+    }
+
+    /***Top Banner section***/
+    /* Top Banner */
+    #banner-contents {
+        height: 50vh; /* Use viewport height */
+        width: 90vw; /* Use viewport width */
+        overflow: hidden;
+        background-image: 100%;
+    }
+    /* Banner text */
+    #banner-contents .banner-text {
+        padding-top: 10%;
+    }
+    /* Banner text heading */
+    #banner-contents .banner-text h1 {
+        font-size: 22px;
+    }
+    /* Banner text paragraph */
+    #banner-contents .banner-text p {
+        font-size: 14px;
+    }
+    /* Banner inputs section */
+    .banner-inputs form{
+        display: flex;
+        flex-wrap: wrap !important;
+        flex-direction: column !important;
+        justify-content: center; 
+        align-items: center; 
+        width: 287px;
+    }
+    .banner-inputs form input, .banner-inputs form select, .banner-inputs form button{
+        width: 100%;
+    }
+}
