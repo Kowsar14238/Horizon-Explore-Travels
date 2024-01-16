@@ -1,0 +1,171 @@
+/* common shared style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles for the entire body */
+body {
+    background-color: #fff;
+}
+
+main section {
+    margin: 3% 8%;
+}
+
+            /***Top Banner section***/
+/* Top Banner */
+#banner-contents {
+    background: url("../Images/top-banner.png") no-repeat center / cover;
+    /* height: 500px; */
+    overflow: hidden;
+    color: #fff;
+    /* Shadow effect */
+    position: relative;
+    z-index: 1;
+    /* Border-radius for a rounded look */
+    border-radius: 16px;
+}
+/* Pseudo-element for the shadow effect */
+#banner-contents::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 70%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Banner text */
+#banner-contents .banner-text {
+    padding-top: 106px;
+    text-align: center;
+    color: #fff;
+}
+/* Banner text heading */
+#banner-contents .banner-text h1 {
+    font-size: 64px;
+    font-weight: bolder;
+    margin-bottom: 2%;
+}
+/* Banner text paragraph */
+#banner-contents .banner-text p {
+    font-family: 'Lucida Sans Regular', sans-serif;
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+/* Banner inputs section */
+.banner-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+/* Style for the form within the banner inputs */
+.banner-inputs form {
+    display: flex;
+    gap: 24px;
+    background-color: #ccc;
+    padding: 1%;
+    border-radius: 5px;
+    margin-bottom: 5%;    
+}
+/* Style for the input field */
+.banner-inputs input {
+    padding: 10px;
+    font-size: 16px;
+    width: 175px;
+    height: 52px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Style for the select dropdowns */
+.banner-inputs select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Style for the submit button*/
+.main-btn{
+    display: flex;
+    align-items: center;
+    background-color: #FF5400;
+    padding: 5px 30px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.main-btn span{
+    padding: 0px 10px;
+}
+/* Hover effect for the submit button */
+.main-btn:hover{
+    background-color: #000;
+}
+
+
+
+            /***Popular Tour Section***/
+#popular-tours {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7% !important;
+    /* align-items: center; */
+}
+.popular-tours-content {
+    flex: 1;
+    padding-right: 20px;
+}
+.popular-tours-content h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.popular-tours-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #5A5A5D;
+}
+.popular-tours-content li {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.6;
+    color: #131318;
+    margin-bottom: 2%;
+}
+.main-btn-others{
+    padding: 2.5% 4%;
+    font-weight: 600;
+}
+.popular-tours-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+            /***Destination Section***/
+
+.destination-images{
+    display: grid;
+    gap: 2%;
+}
+.destination-images-row{
+    display: flex;
+    gap: 2%;
+}
+
+
+
+
+
+
