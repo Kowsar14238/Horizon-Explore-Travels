@@ -2,14 +2,14 @@
 /* Responsive Styling */
 @media screen and (max-width: 500px) {
     .body-sections {
-        margin: 1%;
+        margin: 2%;
+        margin-right: -25% !important;
+        align-items: center;
     }
 
-    /***Top Banner section***/
+                /***Top Banner section***/
     /* Top Banner */
     #banner-contents {
-        height: 50vh; /* Use viewport height */
-        width: 90vw; /* Use viewport width */
         overflow: hidden;
         background-image: 100%;
     }
@@ -35,6 +35,105 @@
         width: 287px;
     }
     .banner-inputs form input, .banner-inputs form select, .banner-inputs form button{
+        width: 100%;
+    }
+
+        
+                /*** Popular Tour Section ***/
+    /* Container for popular tours */
+    #popular-tours {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    /* Title styling for popular tours */
+    .popular-tours-content h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    /* Paragraph styling for popular tours */
+    .popular-tours-content p {
+        font-size: 14px;
+    }
+    /* List item styling for popular tours */
+    .popular-tours-content li {
+        font-size: 14px;
+    }
+    /* Styling for images in popular tours section */
+    .popular-tours-img{
+        margin: 2% 0%;
+    }
+
+        
+                /*** Destination Section ***/
+    #destination, #why-choose{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Style the destination contents */
+    /* .destination-contents{
+        width: 310px;
+    } */
+    /* Title styling for destination contents */
+    .destination-contents h1{
+        font-size: 20px;
+        margin-bottom: 2%;
+    }
+    /* Destination contents paragraph */
+    .destination-contents p{
+        font-size: 14px;
+    }
+    /* Styling for the container of destination images */
+    .destination-images {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 2%;
+    }
+    /* Styling for rows of destination images */
+    .destination-images-row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 2%;
+    }
+    /* Styling for each destination image */
+    .destination-image {
+        position: relative;
+        align-items: center;
+    }
+    .destination-image img, #newsletter-section img{
+        width: 450px;
+        height: 250px;
+        margin-bottom: 2%;
+    }
+    /* Styling for text overlay on destination images */
+    .destination-image .image-text {
+        font-size: 150%;
+    }
+        
+                /***Why Choose Us Section***/
+    /* Content Grid */
+    .why-choose-contents {
+        flex-direction: column;
+    }
+
+        
+                /***Newsletter Section***/
+
+    #newsletter-section{
+        flex-direction: column;
+    }
+    .newsletter-content-img img{
+        margin-top: 2%;
+    }
+
+        
+                /***Footer***/
+
+    .footer-content{
         width: 100%;
     }
 }

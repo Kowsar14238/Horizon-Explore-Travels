@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google font link -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Font awesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>HorizonExplore Travels</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media-screen-style.css">
@@ -15,22 +17,38 @@
 
 
 <body>
-    <header>
-        <!-- <nav class="nav-align">
-            <div class="nav-logo">
-                <img src="images/Group 40071 (2).png" alt="">
-                <h3>Top <span class="color-primary">Trips</span></h3>               
-            </div> 
-            <ul>
-               <li><a href="home">Home</a></li>
-               <li><a href="packages">Packages</a></li>              
-               <li><a href="testimonial">Testimonial</a></li>
-               <li><a href="blog">Blog</a></li>
-               <li><a href="contact">Contact</a></li>
-            </ul>               
-        </nav> -->
-
-    </header>
+    
+    <section class="header">
+        <nav>
+            <a href="index.html" class="logo-content">
+                <img src="./Images/logo.png">
+                <h2> <span>Horizon Explore </span>Travels</h2>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <!-- Taken from font awesome 4 icons (closing bar) [js] -->
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li class="active"> 
+                        <a href="#">Home</a>
+                    </li>
+                    <li> 
+                        <a href="#">Packages</a>
+                    </li>
+                    <li> 
+                        <a href="">Testimonial</a>
+                    </li>
+                    <li> 
+                        <a href="#">Blog</a>
+                    </li>
+                    <li> 
+                        <a href="#">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- Taken from font awesome 4 icons (menu bar) [js] -->
+            <i class="fa fa-reorder" onclick="showMenu()"></i>
+        </nav>
 
     <main>
 
@@ -182,7 +200,13 @@
                     </button>
                 </form>
             </div>
-            <img src="./Images/newsletter.png" alt="">
+            <div class="newsletter-content-img">
+                <img src="./Images/newsletter.png" alt="">
+                <div class="newsletter-img-content">
+                    <p>horizon-explore-travels.com</p>
+                    <h2 class="image-text">Save up to 70%</h2>
+                </div>
+            </div>
         </section>
 
 
@@ -191,6 +215,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
+            <a href="index.html" class="logo-content">
+                <img src="./Images/logo.png">
+                <h2> <span>Horizon Explore </span>Travels</h2>
+            </a>
             <p>
                 Elevate your journey with us, your gateway to extraordinary destinations. Explore our curated travel packages, discover exclusive deals, and embark on unparalleled adventures. Trust us to make every moment of your travel experience memorable.
             </p>
@@ -207,5 +235,19 @@
         </div>
     </footer>
     
+    
+    <!---- JavaScript for Toggle Menu  ---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
 </body>
 </html>
